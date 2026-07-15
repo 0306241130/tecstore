@@ -1,17 +1,15 @@
-import './App.css'
-import Header from './components/Header'
-import ProductCard from './components/ProductCard'
-import ProductList from './components/ProductList'
+import "./App.css";
+import Header from "./components/Header";
+import ProductList from "./components/ProductList";
+import products from "./data/product";
 function App() {
-  
   return (
     <>
-      <Header/>
-      <ProductCard id = {1} name= "MacBook Air M4" cartogery="Apple" price={28999900}/>
-      <ProductList/>
-      
+      <Header />
+      <span>Có {products.length} sản phẩm</span>
+      <ProductList />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

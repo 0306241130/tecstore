@@ -1,16 +1,22 @@
 import products from "../data/product";
 import ProductCard from "./ProductCard";
-
+import ProductInfor from "./ProductInfor";
 export default function ProductList() {
   return (
     <>
       {products.map((product) => (
         <ProductCard
-          id={product.id}
+          key={product.id}
           name={product.name}
           price={product.price}
-          cartogery={product.cartogery}
-        />
+          brand={product.brand}
+        >
+          <ProductInfor
+            catogery={product.catogery}
+            discount={product.discount}
+            stock={product.stock}
+          />
+        </ProductCard>
       ))}
     </>
   );
