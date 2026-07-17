@@ -1,10 +1,10 @@
 export default function ProductCard({ children, name, brand, price, img }) {
   return (
     <>
-      <div class="card text-start">
-        <img class="card-img-top" src={img} alt="Title" height={300} />
-        <div class="card-body">
-          <h4 class="card-title">{name}</h4>
+      <div className="card text-start">
+        <img className="card-img-top" src={img} alt="Title" height={300} />
+        <div className="card-body">
+          <h4 className="card-title">{name}</h4>
           <article className="card-text">
             <div className="d-flex  justify-content-between align-items-end flex-wrap">
               <div className="">

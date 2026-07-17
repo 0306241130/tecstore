@@ -4,8 +4,8 @@ import ProductInfor from "./ProductInfor";
 export default function ProductList() {
   return (
     <>
-      <div class="container-fluid">
-        <div class="row justify-content-center align-items-center g-2">
+      <div className="container-fluid">
+        <div className="row justify-content-center align-items-center g-2">
           {products.map((product) => (
             <div class="col">
               <ProductCard
