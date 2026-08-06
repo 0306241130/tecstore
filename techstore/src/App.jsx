@@ -4,6 +4,7 @@ import ProductList from "./components/ProductList";
 import Footer from "./components/Footer";
 import UserProfileManager from "./feautres/UserProFile/UserProFileManager";
 import ProfileManager from "./feautres/LocalProfile/ProfileManager";
+import AppLiveClock from "./feautres/LiveClock/AppLiveClock";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <h1 className="text-center">Hệ thống quản lý cửa hàng</h1>
         <hr></hr>
         {/* <UserProfileManager/> */}
-        <ProfileManager />
+        {/* <ProfileManager /> */}
+        <AppLiveClock/>
       </div>
     </>
   );

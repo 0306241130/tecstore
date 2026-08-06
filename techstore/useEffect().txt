@@ -1,0 +1,11 @@
+1.không truyền dependency array
+    -chạy sau lần component mount vào
+    -chạy sau mọi lần render
+2.dependency là mảng rỗng
+    -chỉ sau một lần khi component được mount vào
+3.có dependency 
+    -chạy sau khi component mount vào
+    -mỗi lần khi đối số truyền vào dependency thay đổi
+**hàm Clean up
+trước khi effect chạy lại
+khi component unmount
